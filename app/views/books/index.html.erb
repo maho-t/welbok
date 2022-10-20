@@ -1,5 +1,11 @@
 <h1>読書履歴TOP</h1>
 
+<div class="new">
+  <%= link_to '本を登録する', new_book_path %>
+</div>
+
 <div class="all-book">
-  <%= @book.title %>
+  <% @books.each do |book| %>
+    <%= book.title %>
+  <% end %>
 </div>

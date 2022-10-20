@@ -14,6 +14,7 @@ class BooksController < ApplicationController
     else
       render :new
     end
+  end
 
   private
   def book_params
