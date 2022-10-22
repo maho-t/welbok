@@ -1,0 +1,8 @@
+<%= form_with(model: book, local: true) do |form| %>
+  <%= render 'layouts/error_messages', model: form.object %>
+  <%= form.text_field :title, placeholder: "タイトル" %>
+  <%= form.text_field :author, placeholder: "著者" %>
+  <%= form.text_field :date, placeholder: "読了日" %>
+  <%= form.text_area :memo, placeholder: "メモ" %>
+  <%= form.submit "SEND" %>
+<% end %>
